@@ -1,0 +1,79 @@
+.about-page {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* SECTION 1 — FULL BACKGROUND IMAGE */
+.about-hero {
+  position: relative;
+  height: 90vh;
+  background: url("https://wallpapercave.com/wp/wp6629560.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65); /* DARK OVERLAY */
+}
+
+.about-hero .content {
+  position: relative;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* SECTION 2 — IMAGE LEFT, TEXT RIGHT */
+.about-section {
+  display: flex;
+  height: 70vh;
+}
+
+.image-side {
+  flex: 1;
+  background: url("https://wallpapers.com/images/hd/motivation-bodybuilding-poster-ij9cxqitbpe0i2am.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.image-side .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* LOW OPACITY BLACK */
+  
+}
+
+.text-side {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-side h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.text-side p {
+  font-size: 17px;
+  opacity: 0.85;
+  line-height: 1.7;
+}

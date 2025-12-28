@@ -1,0 +1,99 @@
+/* ===== FULL PAGE BG IMAGE ===== */
+.WhyJoin-page {
+  width: 100%;
+  min-height: 100vh;
+  background: url("https://media.istockphoto.com/id/470062516/photo/strong-man.jpg?s=612x612&w=0&k=20&c=7ClhVsIxYM2wnXiiUGu0NHC9rcIsa0nkKbDxGrwLnho=") center/cover no-repeat fixed;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* DARK OVERLAY for whole page */
+.WhyJoin-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);   /* opacity low */
+  z-index: -1;
+}
+
+/* ===== HERO SECTION ===== */
+.WhyJoin-hero {
+  text-align: center;
+  padding: 120px 20px 100px;
+}
+
+.WhyJoin-hero h1 {
+  font-size: 55px;
+  font-weight: 800;
+  color: #00ff9d;
+}
+
+.WhyJoin-hero p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ===== 2 × 2 GRID ===== */
+.why-join-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 40px 90px;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.6); /* transparent bg */
+  border: 2px solid #00ff9d;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00ff9d;
+}
+
+.box img {
+  width: 70px;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.box h3 {
+  font-size: 22px;
+  color: #00ff9d;
+}
+
+.box p {
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ===== ENQUIRE BUTTON ===== */
+.enquire-wrapper {
+  text-align: center;
+  margin: 70px 0;
+}
+
+.enquire-btn {
+  background: #00ff9d;
+  color: #000;
+  padding: 15px 40px;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.enquire-btn:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 15px #00ff9d;
+}
