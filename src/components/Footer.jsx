@@ -1,12 +1,12 @@
 import React from "react";
-import "./Footer.css";
+
 import {
   FaMapMarkerAlt,
   FaEnvelope,
   FaInstagram,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";   // ✅ X icon
-import "./footer.css";
+import "./Footer.css";
 import logo from "../assets/logo.png";
 
 export default function Footer() {
